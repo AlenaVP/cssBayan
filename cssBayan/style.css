@@ -13,13 +13,29 @@ input {
   margin: 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 .main {
   padding: 35px;
 }
 
 .mem {
+  display: grid;
+  grid-template-columns: auto 10wv;
+  justify-content: space-between;
+  
   padding: 20px 10px;
   border-top: 2px solid #d3d3d3;
+}
+
+.mem-label { grid-area: 1 / 1 / 2 / 2; }
+.mem-input{ grid-area: 1 / 2 / 2 / 3; }
+.mem-img { grid-area: 2 / 1 / 3 / 3; }
+
+.mem-input {
+  justify-self: end;
 }
 
 .mem-label {
@@ -28,6 +44,7 @@ input {
 }
 
 .mem-img {
+  margin: 0 auto;
   width: 35vw;
   height: 35vw;
   background-color: burlywood;
