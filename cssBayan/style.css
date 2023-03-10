@@ -1,11 +1,7 @@
 /* base */
-html {
-  font-size: 10px;
-}
-
 body {
   margin: 0;
-  font: 2rem/1.25 Arial, sans-serif;
+  font: 1.25rem/1.25 Arial, sans-serif;
   background-color: beige;
 }
 
@@ -18,7 +14,7 @@ h1 {
 }
 
 .main {
-  padding: 35px;
+  padding: 2rem;
 }
 
 .mem {
@@ -26,8 +22,8 @@ h1 {
   grid-template-columns: auto 10wv;
   justify-content: space-between;
 
-  padding: 20px 10px;
-  border-top: 2px solid #d3d3d3;
+  padding: 1.25rem 0.6rem;
+  border-top: 0.2rem solid #d3d3d3;
 }
 
 .mem-label { grid-area: 1 / 1 / 2 / 2; }
