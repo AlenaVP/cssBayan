@@ -30,10 +30,11 @@ h1 {
 .mem-input{ grid-area: 1 / 2 / 2 / 3; }
 .mem-img { grid-area: 2 / 1 / 3 / 3; }
 
+.mem,
 .mem-input,
 .mem-label,
 .mem-img {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in;
 }
 
 .mem-input {
@@ -75,4 +76,12 @@ h1 {
 .mem-input[type="radio"]:checked~.mem-img,
 .mem:hover .mem-img {
   display: block;
+}
+
+.mem:active {
+  filter: opacity(50%);
+}
+
+.mem:active > .mem-label {
+  color: royalblue;
 }
