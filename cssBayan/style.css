@@ -42,6 +42,16 @@ h1 {
   visibility: hidden;
 }
 
+.mem-input[type="radio"] {
+  appearance: none;
+  width: 1.07em;
+  height: 1.07em;
+  margin: 0.2em;
+  background-color: black;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  transform: rotate(45deg);
+}
+
 .mem-label {
   font-size: 1.25em;
   font-weight: 700;
@@ -69,6 +79,10 @@ h1 {
 .mem-input[type="radio"]:checked~.mem-label,
 .mem-input[type="radio"]:checked~.mem-img {
   color: black;
+}
+
+.mem-input[type="radio"]:checked {
+  transform: rotate(0);
 }
 
 .mem-input[type="radio"]:checked~.mem-img,
