@@ -49,11 +49,9 @@ h1 {
 }
 
 .mem-img {
-  display: none;
-
   margin: 0 auto;
   width: 35vw;
-  height: 35vw;
+  height: 0;
   background-color: burlywood;
 }
 
@@ -75,13 +73,13 @@ h1 {
 
 .mem-input[type="radio"]:checked~.mem-img,
 .mem:hover .mem-img {
-  display: block;
+  height: 35vw;
 }
 
 .mem:active {
   filter: opacity(50%);
 }
 
-.mem:active > .mem-label {
+.mem:active>.mem-label {
   color: royalblue;
 }
