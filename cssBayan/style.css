@@ -59,8 +59,8 @@ h1 {
 }
 
 .mem-img {
-  margin: 0 auto;
-  width: 35vw;
+  margin: 1rem auto 0;
+  width: 10rem;
   height: 0;
   background-color: burlywood;
 }
@@ -87,7 +87,7 @@ h1 {
 
 .mem-input[type="radio"]:checked~.mem-img,
 .mem:hover .mem-img {
-  height: 35vw;
+  height: 10rem;
 }
 
 .mem:active {
@@ -96,4 +96,47 @@ h1 {
 
 .mem:active>.mem-label {
   color: royalblue;
+}
+
+/* tablet */
+@media (min-width: 820px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .main {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .mem-img {
+    width: 20rem;
+  }
+
+  .mem-input[type="radio"]:checked~.mem-img,
+  .mem:hover .mem-img {
+    height: 20rem;
+  }
+}
+
+
+/* desktop */
+@media (min-width: 1920px) {
+  body {
+    font-size: 2rem;
+  }
+
+  .main {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .mem-img {
+    width: 25rem;
+  }
+
+  .mem-input[type="radio"]:checked~.mem-img,
+  .mem:hover .mem-img {
+    height: 25rem;
+  }
 }
