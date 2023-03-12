@@ -59,7 +59,7 @@ h1 {
 
 .mem-img {
   margin: 1rem auto 0;
-  width: 10rem;
+  width: 15rem;
   height: 0;
   background-color: burlywood;
 }
@@ -71,13 +71,32 @@ h1 {
   cursor: pointer;
 }
 
+.mem:nth-child(1) > .mem-img {
+  background: url("./assets/pic_1.png") center / contain no-repeat;
+}
+
+.mem:nth-child(2) > .mem-img {
+  background: url("./assets/pic_2.png") center / contain no-repeat;
+}
+
+.mem:nth-child(3) > .mem-img {
+  background: url("./assets/pic_3.png") center / contain no-repeat;
+}
+
+.mem:nth-child(4) > .mem-img {
+  background: url("./assets/pic_4.png") center / contain no-repeat;
+}
+
+.mem:nth-child(5) > .mem-img {
+  background: url("./assets/img_5.png") center / contain no-repeat;
+}
+
 .accordion-container:hover .mem-input {
   visibility: visible;
 }
 
 .accordion-container:hover .mem-label,
-.mem-input[type="radio"]:checked~.mem-label,
-.mem-input[type="radio"]:checked~.mem-img {
+.mem-input[type="radio"]:checked~.mem-label{
   color: black;
 }
 
@@ -88,7 +107,7 @@ h1 {
 
 .mem-input[type="radio"]:checked~.mem-img,
 .mem:hover .mem-img {
-  height: 10rem;
+  height: 15rem;
 }
 
 .mem:active {
