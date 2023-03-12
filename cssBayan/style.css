@@ -41,7 +41,7 @@ h1 {
   visibility: hidden;
 }
 
-.mem-input[type="radio"] {
+.mem-input {
   appearance: none;
   width: 1.07em;
   height: 1.07em;
@@ -64,7 +64,6 @@ h1 {
   background-color: burlywood;
 }
 
-.mem:hover,
 .mem-input,
 .mem-img,
 .mem-label {
@@ -91,22 +90,15 @@ h1 {
   background: url("./assets/img_5.png") center / contain no-repeat;
 }
 
-.accordion-container:hover .mem-input {
-  visibility: visible;
-}
-
-.accordion-container:hover .mem-label,
-.mem-input[type="radio"]:checked~.mem-label{
+.mem-input[type="radio"]:checked~.mem-label {
   color: black;
 }
 
-.mem:hover .mem-input,
 .mem-input[type="radio"]:checked {
   transform: rotate(0);
 }
 
-.mem-input[type="radio"]:checked~.mem-img,
-.mem:hover .mem-img {
+.mem-input[type="radio"]:checked~.mem-img {
   height: 15rem;
 }
 
@@ -133,14 +125,35 @@ h1 {
     width: 20rem;
   }
 
-  .mem-input[type="radio"] {
+  .mem-input {
     width: 1.25em;
     height: 1.25em;
+    visibility: hidden;
+  }
+
+  .mem:hover {
+    cursor: pointer;
+  }
+
+  .accordion-container:hover .mem-input {
+    visibility: visible;
+  }
+
+  .accordion-container:hover .mem-label {
+    color: black;
+  }
+
+  .mem:hover .mem-input {
+    transform: rotate(0);
   }
 
   .mem-input[type="radio"]:checked~.mem-img,
   .mem:hover .mem-img {
     height: 20rem;
+  }
+
+  .mem:active>.mem-label {
+    color: royalblue;
   }
 }
 
@@ -160,7 +173,7 @@ h1 {
     width: 25rem;
   }
 
-  .mem-input[type="radio"] {
+  .mem-input {
     width: 1.7em;
     height: 1.7em;
   }
