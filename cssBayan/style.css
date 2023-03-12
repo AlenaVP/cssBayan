@@ -72,7 +72,7 @@ h1 {
 }
 
 .mem:nth-child(1) > .mem-img {
-  background: url("./assets/pic_1.png") center / contain no-repeat;
+  background: url("./assets/img_1.jpg") center / contain no-repeat;
 }
 
 .mem:nth-child(2) > .mem-img {
@@ -80,11 +80,11 @@ h1 {
 }
 
 .mem:nth-child(3) > .mem-img {
-  background: url("./assets/pic_3.png") center / contain no-repeat;
+  background: url("./assets/img_3.jpg") center / contain no-repeat;
 }
 
 .mem:nth-child(4) > .mem-img {
-  background: url("./assets/pic_4.png") center / contain no-repeat;
+  background: url("./assets/img_4.jpg") center / contain no-repeat;
 }
 
 .mem:nth-child(5) > .mem-img {
