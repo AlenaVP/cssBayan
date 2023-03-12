@@ -67,6 +67,7 @@ h1 {
 
 .mem:hover,
 .mem-input,
+.mem-img,
 .mem-label {
   cursor: pointer;
 }
