@@ -59,9 +59,12 @@ h1 {
 
 .mem-img {
   margin: 1rem auto 0;
-  width: 15rem;
+  width: 100%;
   height: 0;
-  background-color: burlywood;
+}
+
+.accordion-container>.mem>label.mem-img {
+  background-size: 15rem;
 }
 
 .mem-input,
@@ -70,24 +73,24 @@ h1 {
   cursor: pointer;
 }
 
-.mem:nth-child(1) > .mem-img {
-  background: url("./assets/img_1.jpg") center / contain no-repeat;
+.mem:nth-child(1)>.mem-img {
+  background: url("./assets/img_1.jpg") center no-repeat;
 }
 
-.mem:nth-child(2) > .mem-img {
-  background: url("./assets/pic_2.png") center / contain no-repeat;
+.mem:nth-child(2)>.mem-img {
+  background: url("./assets/pic_2.png") center no-repeat;
 }
 
-.mem:nth-child(3) > .mem-img {
-  background: url("./assets/img_3.jpg") center / contain no-repeat;
+.mem:nth-child(3)>.mem-img {
+  background: url("./assets/img_3.jpg") center no-repeat;
 }
 
-.mem:nth-child(4) > .mem-img {
-  background: url("./assets/img_4.jpg") center / contain no-repeat;
+.mem:nth-child(4)>.mem-img {
+  background: url("./assets/img_4.jpg") center no-repeat;
 }
 
-.mem:nth-child(5) > .mem-img {
-  background: url("./assets/img_5.png") center / contain no-repeat;
+.mem:nth-child(5)>.mem-img {
+  background: url("./assets/img_5.png") center no-repeat;
 }
 
 .mem-input[type="radio"]:checked~.mem-label {
@@ -121,10 +124,6 @@ h1 {
     padding-right: 10rem;
   }
 
-  .mem-img {
-    width: 20rem;
-  }
-
   .mem-input {
     width: 1.25em;
     height: 1.25em;
@@ -147,6 +146,10 @@ h1 {
     transform: rotate(0);
   }
 
+  .accordion-container>.mem>label.mem-img {
+    background-size: 20rem;
+  }
+
   .mem-input[type="radio"]:checked~.mem-img,
   .mem:hover .mem-img {
     height: 20rem;
@@ -156,7 +159,6 @@ h1 {
     color: royalblue;
   }
 }
-
 
 /* desktop */
 @media (min-width: 1920px) {
@@ -169,17 +171,17 @@ h1 {
     padding-right: 20rem;
   }
 
-  .mem-img {
-    width: 25rem;
-  }
-
   .mem-input {
     width: 1.7em;
     height: 1.7em;
   }
 
+  .accordion-container>.mem>label.mem-img {
+    background-size: 30rem;
+  }
+
   .mem-input[type="radio"]:checked~.mem-img,
   .mem:hover .mem-img {
-    height: 25rem;
+    height: 30rem;
   }
 }
